@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset=utf-8 />
+	<title>Volunteer Services Around the Bay Area</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<style>
+	  body { margin:0; padding:0; }
+	  #container { position:relative; margin: 0px auto; width: 80%;}
+	  #map { position:relative; height: 500px; width:100%; }
+	  .popupimage { width: 200px; }
+	</style>
+  </head>
+
+  <body>
+	<div id='container'>
+		<h1>Girls Who Code's Favorite Cities! </h1>
+		<p>Hmmm, I think we're missing a couple cities. Try checking out <b>script.js</b> and see if you can get the rest on the map.</p>
+		<div id='map'></div>
+	</div>
+	<script src='script.js'></script>
+		
+  </body>
+
+
+</html>
