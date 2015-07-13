@@ -1,0 +1,69 @@
+
+.everything {
+	background-color: #7e7c7c;
+	margin: 3px;}
+	
+a:link {
+		text-decoration: none;}
+a:visited {
+	text-decoration: none;}
+a:hover {
+	opacity: 0.5;}
+a:active {
+	text-decoration: none;}
+	
+div > p1 { 
+	padding-top: -70px;
+	font-family: 'Sacramento', cursive;}
+	
+#first {
+	font-family: 'Cinzel Decorative', cursive;
+	padding-top: 150px;
+	padding-bottom: 155px;
+	text-align: center;
+	font-size: 50px;
+	background-image: url("http://wallpaperhdfree.com/wp-content/uploads/2013/11/New-York-City-Wallpaper-Download.jpg");
+	color: #eeeeee;
+	background-position: 0 0px;
+	letter-spacing: 15px;
+	background-size: 99% auto;
+	top: 0; right: 0; left: 0; bottom: 0;}
+	
+#mapFront {
+	padding-top: 125px;
+	padding-bottom: 150px;
+	text-align: center;
+	font-size: 35px;
+	background-color: #e3e2e2;
+}
+
+#second a{color: #606060;}	
+#second {
+	font-family: 'Cinzel Decorative', cursive;
+	padding-top: 125px;
+	padding-bottom: 150px;
+	text-align: center;
+	font-size: 35px;
+	background-color: #90ddd8;
+	color: #606060;}
+	
+#third a{color: #424242;}	
+#third {
+	font-family: 'Cinzel Decorative', cursive;
+	padding-top: 125px;
+	padding-bottom: 150px;
+	text-align: center;
+	font-size: 35px;
+	background-color: #e3e2e2;
+	color: #424242;}
+
+#fourth a{color: #606060;}		
+#fourth {
+	font-family: 'Cinzel Decorative', cursive;
+	padding-top: 125px;
+	padding-bottom: 150px;
+	text-align: center;
+	font-size: 35px;
+	background-color: #90ddd8;
+	color: #606060;}
+
