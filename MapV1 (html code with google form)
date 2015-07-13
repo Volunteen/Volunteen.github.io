@@ -4,7 +4,7 @@
 	<head>
 
 		<meta charset=utf-8 />
-		<title>Volunteer Opportunities </title>
+		<title>Volunteer Opportunities in the Bay Area</title>
 		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 		<script src='tabletop1.3.4.js'></script>
 		<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
@@ -32,7 +32,7 @@ div1{
 
 		<div id='container'>
 
-			<center><h1>Volunteer Opportunities</h1></center>
+			<center><h1>Volunteer Opportunities in the Bay Area</h1></center>
 			<div id='map'></div>
 			
 		</div>
