@@ -4,7 +4,7 @@ var map = L.mapbox.map('map', 'examples.map-20v6611k')
 
 var myLayer = L.mapbox.featureLayer().addTo(map);
 //var spreadsheet_url = '1B93XRI8b9NB_KiK7pSBz6C6FQeAVqRX3gebrOkNap_s';
-var spreadsheet_url = '1z5IrO8EDFtBZU-f5Zi6gXgv0LFHDABFS69_H4cU8uH8';
+var spreadsheet_url = '1JcWAS8ZRwlbDb1brMHI87NfRm5hI8F-BBafuWKu3OOc';
 var spreadsheet_urlResponses = '1KA9NfxB0fByKWIsXSm8jEzIiOzlhtJRcuPLWZUPSREA';
 
 window.onload = function () {
