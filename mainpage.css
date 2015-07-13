@@ -45,7 +45,10 @@
 			font-size: 35px;
 			background-color: #e3e2e2;}
 		
-		#second a{color: #424242;}	
+		#second a{color: #424242;}
+		#second:hover{
+			opacity: 0.6;}
+		}
 		#second {
 			font-family: 'Cinzel Decorative', cursive;
 			padding-top: 125px;
