@@ -8,7 +8,8 @@
 		a:visited {
 			text-decoration: none;}
 		a:hover {
-			opacity: 0.5;}
+			opacity: 0.5;
+			text-decoration: none;}
 		a:active {
 			text-decoration: none;}
 			
@@ -46,8 +47,6 @@
 			background-color: #e3e2e2;}
 		
 		#second a{color: #424242;}
-		#second:hover{
-			opacity: 0.6;}
 		}
 		#second {
 			font-family: 'Cinzel Decorative', cursive;
