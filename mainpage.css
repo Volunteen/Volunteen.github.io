@@ -72,4 +72,10 @@
 			font-size: 35px;
 			background-color: #e3e2e2;
 			color: #606060;}
+			
+		#backToTop img{
+			position: fixed;
+    			bottom: 20px;
+   			right: 30px;
+			height: 60px;}
 
