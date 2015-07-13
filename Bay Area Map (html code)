@@ -22,6 +22,10 @@
 		<p>Hmmm, I think we're missing a couple cities. Try checking out <b>script.js</b> and see if you can get the rest on the map.</p>
 		<div id='map'></div>
 	</div>
+	<div id = "form">
+	<iframe src="https://docs.google.com/forms/d/1z5IrO8EDFtBZU-f5Zi6gXgv0LFHDABFS69_H4cU8uH8/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+	
 	<script src='script.js'></script>
 		
   </body>
