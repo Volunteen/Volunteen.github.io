@@ -35,7 +35,7 @@
 		#mapFront a{color: #b0e7e4;}	
 		#mapFront {
 			/*padding-top: 125px;*/
-			border: #424242 1px solid; 
+			border: none; 
 			text-align: center;
 			font-size: 35px;
 			background-color: #424242;
