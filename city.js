@@ -14,13 +14,10 @@ window.onload = function(){
 };
 
 function showInfo(data, Tabletop) {
-    alert("Successfully processed!")
-    console.log(data);
     
     var places = [];
     for(var i= 0; i< data.length; i++){
     	var place = data[i];
-    	// console.log(place);
     	
     	var placeJSON = { type: 'Feature',
     					properties: {
