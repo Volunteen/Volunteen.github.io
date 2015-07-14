@@ -30,8 +30,8 @@
 		.box {
 		  	width: 200px;
 		 	padding: 3px;
-		  	padding-top: 50px;
-		  	padding-bottom: 50px;
+		  	padding-top: 5px;
+		  	padding-bottom: 25px;
 		  	margin: 3px auto;
 		  	color: #e3e2e2;
 		  	font-family: 'Sacramento', cursive;
@@ -42,27 +42,22 @@
 		  	width:33%;
 		  	float:left;}
 		
-		.infoBoxes{
-			width: 400px;
+		.infoBoxes1{
+            width:30%;
 		 	padding: 3px;
-		  	padding-top: 50px;
-		  	padding-bottom: 50px;
-		  	margin: 3px ;
 		  	color: #ffffff;
 		  	font-size: 15px;
 			
 		}
-		.infoText{
-		width:33%;
-		float:left;
-		}
+        h4{font-family: sans-serif
+        }
 		
-		#navmenu a {text-decoration:none; color: #e3e2e2; }
+		#navmenu a {text-decoration:none; color: #606060;; }
 		#navmenu ul {margin-top: 0; position: fixed; position: center;  
 			left: 0;
 			right: 0; 
-			list-style-type: none; list-style-image: none; background-color: #606060;
-			font-family: 'Sacramento', cursive; text-align: center; border: solid #e3e2e2;}
+			list-style-type: none; list-style-image: none; background-color: #b0e7e4;
+			font-family: 'Sacramento', cursive; text-align: center; border: solid #606060;}
 		#navmenu li {display: inline; padding: 5px 80px 5px 80px; font-size: 25px;}
 		
 	</style>
@@ -71,7 +66,7 @@
 	<body class = "everything">
 		<div id="navmenu">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="<?php echo get_settings('home'); ?>">Home</a></li>
 				<li><a href="getStarted.html"> Get Started </a></li>
 				<li><a href="contact2.html">Contact</a></li>
 			</ul></div>
@@ -85,19 +80,18 @@
     		<div class="box">Children</div>
     	</div>
   		<div class="bigbox">
-    		<div class="box">Races</div>
+    		<div class="box">Racing Events</div>
   		</div>
-  			<div class="infoBoxes">
- 		ASD Climber Foundation	
- 		<div class="infoText">We are working with a family in your area
- 		with a child on the autism spectrum. The 
- 		family wants to train volunteers to help 
- 		them run a home based social skills program 
- 		called the Son-Rise Program. No experience 
- 		necessary. Free training provided. Time 
- 		commitment is 2-4 hours a week for 6 months 
- 		or more.</div>
- 		</div>
+  		<div class="infoBoxes1">
+        <h4>ASD Climber Foundation</h4>
+        <p>We are working with a family in your area
+        with a child on the autism spectrum. The
+        family wants to train volunteers to help 
+ 	them run a home based social skills program 
+ 	called the Son-Rise Program. No experience 
+ 	necessary. Free training provided. Time 
+ 	commitment is 2-4 hours a week for 6 months 
+ 	or more.</div>
   		
 	</body>
 
