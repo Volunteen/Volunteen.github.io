@@ -17,7 +17,13 @@
 			padding-top: -70px;
     		font-family: 'Sacramento', cursive;}
     		
-    		div {height: 100%; width: 100%;}
+    		div {
+    			height: 100%; 
+    			width: 100%;
+    			position: absolute; 
+    			top: 0; 
+    			left: 0;
+    		}
     		
 		#first {
 			font-family: 'Cinzel Decorative', cursive;
