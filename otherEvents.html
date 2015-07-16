@@ -8,6 +8,8 @@
 <title>Volunteer</title>
 <script src='tabletop1.3.4.js'></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+<script src='tabletopEVENT.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <html>
   <head>
@@ -65,5 +67,26 @@
 		</div>
 		<div id="backToTop">
 			<a href="#top"><img src="http://static.wixstatic.com/media/357196_fa3961135f79461b8c879f7e8684df77.png_srz_640_640_85_22_0.50_1.20_0.00_png_srz"></a></div>
+  
+	<script type="text/javascript">
+	window.onload = function() { init() };
+
+	function init() {
+		Tabletop.init({key: '1Yd3aFX9vfpq31tFoyCHe6rAOfGf9DonMIaanwDPBvjQ', callback: showInfo, simpleSheet: true});
+	}
+
+	function showInfo(data) {
+        var dataArray = [];
+        for (var i = 0; i<data.length; i ++){
+            dataArray[i] = data[i];
+            var info = "Name: " + dataArray[i].name + "<br>" + "Description: " + dataArray[i].description;
+            console.log(info);
+            $("#first").append(info);
+        }
+        
+	}
+
+	</script>
+
   </body>
 </html>
