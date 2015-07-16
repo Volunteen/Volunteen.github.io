@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<title>Favorite Places</title>
+	
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,100,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="MarkerCluster.css"/>
+	<script src="leaflet.markercluster.js"></script>
+	<script src = "tabletop1.3.4.js"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js"></script>
+	<!-- <script src= "markerclusterer.js"></script> -->
+		<style>
+			.legend label,
+			.legend span {
+  			display:block;
+  			float:left;
+  			height:15px;
+  			width:50px;
+  			text-align:center;
+  			font-size:9px;
+  			color:#808080;
+  			}
+		</style>
+	
+
+		<style>
+		  body { margin:0; padding:0; background-color : #F2F2F2;}
+		  #container { position:relative; margin: 0px auto; width: 80%;}
+		  #map { position:relative; height: 500px; width:100%; margin-top: 100px;}
+		  .popupimage { width: 200px; }
+		  
+		  h1{
+		  font-family : 'Roboto', sans-serif;
+		  font-size : 40px;
+		  text-align : center;
+		  
+		  }
+		  
+		  a:link{
+		  font-family : 'Roboto', sans-serif;
+		  font-size : 20px;
+		  margin-bottom : 20px;
+		  }
+		  a:visited{
+		  font-family : 'Roboto', sans-serif;
+		  font-size : 20px;
+		  text-decoration : none;	
+		  color : black;	  
+		  margin-bottom : 20px;
+		  }
+		  #form{
+		  margin-top: 550px;
+		  }
+		  
+		</style>
+		<style>
+ 		 body { margin:0; padding:0; }
+  		#map { position:absolute; top:0; bottom:0; width:100%; }
+	</style>
+	</head>
+		<body>
+		<h1> Marlena and Xanthe's Favorite Places </h1>
+		
+
+
+
+
+	<div id='legend' style='display:none;'>
+  	<strong>Legend</strong>
+  	<nav class='legend clearfix'>
+    <span style='background:#00BFFF;'></span>
+    <span style='background:#F2BE1F;'></span>
+  	<br />
+    <label>Marlena</label>
+    <label>Xanthe</label>
+   
+    
+	</div>
+
+	
+	
+	<div id='map'></div>
+	
+
+	<div id = "form">
+	<!-- <iframe src="https://docs.google.com/forms/d/1rkjVT9lfgvXx04bdxnOqVJBqsyYeTN2R9dQEbd3xmWQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+	</div>
+
+
+
+	<script src='script.js'></script>
+</body>
