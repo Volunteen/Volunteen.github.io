@@ -17,11 +17,11 @@
 			padding-top: -70px;
     		font-family: 'Sacramento', cursive;}
     		
-    		div {height: 100%;}
+    		div {height: 100%; width: 100%;}
     		
 		#first {
 			font-family: 'Cinzel Decorative', cursive;
-			height: 100%;
+			height: 100%; width: 100%;
 			padding-top: 150px;
 			padding-bottom: 155px;
 			text-align: center; font-size: 50px;
