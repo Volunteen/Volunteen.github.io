@@ -90,20 +90,19 @@
 			font-family: 'Sacramento', cursive; text-align: center; border: solid #e3e2e2;}
 		#navmenu li {display: inline; padding: 5px 80px 5px 80px; font-size: 25px;}
 		
-		#mapOptions a {text-decoration:none; color: #e3e2e2; }
-		#mapOptions ul {margin-top: 0; position: center;  
-			left: 0;
-			right: 0;
-			padding-top: 25px; padding-bottom: 25px; 
-			list-style-type: none; list-style-image: none; background-color: #606060;
-			font-family: 'Sacramento', cursive; text-align: center;}
-		#mapOptions li {display: inline; padding: 10px 50px 10px 50px; font-size: 30px;}
-		
 		#mapPrompt {
-			padding-top: 70px;
-			padding-bottom: 70px;
+			padding-top: 70px; 
+			padding-bottom: 0;
 			font-family: 'Cinzel Decorative', cursive;
 			font-size: 20px;
 			text-align: center;
-			background-color: #e3e2e2;
-			color: #606060;}
+			background-color: #606060;
+			color: #e3e2e2;}
+			
+		#mapOptions a {text-decoration:none; color: #e3e2e2; }
+		#mapOptions ul {margin-top: 0; position: center;  
+			left: 0; right: 0;
+			padding-top: 40px; padding-bottom: 70px; 
+			list-style-type: none; list-style-image: none; background-color: #606060;
+			font-family: 'Sacramento', cursive; text-align: center; color: #606060;}
+		#mapOptions li {display: inline; padding: 0px 50px 0px 50px; font-size: 30px;}
