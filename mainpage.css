@@ -21,9 +21,10 @@
     		
 		#first {
 			font-family: 'Cinzel Decorative', cursive;
-			width: 100%;
-			text-align: center;
-			font-size: 50px;
+			width: 100%; height: 100%;
+			padding-top: 150px;
+			padding-bottom: 155px;
+			text-align: center; font-size: 50px;
 			background-image: url("http://i.huffpost.com/gen/1377460/images/o-POVERTY-facebook.jpg");
 			background-repeat: no-repeat;
 			background-size: cover;
