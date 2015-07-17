@@ -22,8 +22,9 @@ function showInfo(data, Tabletop) {
     	var placeJSON = { type: 'Feature',
     					properties: {
     						title: place.name,
+    						description: place.description,
     						type:place.type,
-    						description: place.description + "br" + place.link,
+    						description: place.description,
     						'marker-color': place.color,
     						'marker-size': 'large',
     						'marker-symbol': place.symbol,
