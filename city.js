@@ -54,6 +54,6 @@ function setupMap(placeList){
 	map.addLayer(markers);
 	
 	markers.on('clusterclick', function (a) { setUpMap(placeList) });
-	markers.on('click', function (a) { alert('Marker Clicked'); });
+	//markers.on('click', function (a) { alert('Marker Clicked'); });
 	markers.on('clusterclick', function (a) {a.layer.zoomToBounds(); });
 }
