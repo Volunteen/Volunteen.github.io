@@ -1,10 +1,10 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiZ3NmZ2lybHN3aG9jb2RlIiwiYSI6IjA0MmYzMjVkNTRlMzc5Nzc1NjNiNDlhYTgwYjY5M2QxIn0.HB47REf6tM0lOZO8TWcl6A';
-var map = L.mapbox.map('map', 'examples.map-20v6611k')
+var map = L.mapbox.map('map', 'mapbox.streets')
   .setView([38.12367, -76.81229], 9);
 
 var myLayer = L.mapbox.featureLayer().addTo(map);
-var spreadsheet_url = '1O3dYsn5WFju_t-AgDR-FwEtGGpKLLc5rfyn89aqrD24';
 
+var spreadsheet_url = '1O3dYsn5WFju_t-AgDR-FwEtGGpKLLc5rfyn89aqrD24';
 
 window.onload = function(){
 	Tabletop.init(   {  key: spreadsheet_url,
@@ -47,6 +47,13 @@ function showInfo(data, Tabletop) {
 
 
 function setupMap(placeList){
+	var markers = new L.MarkerClusterGroup({animateAddingMarkers: true, maxClusterRadius: 100, spiderfyOnMaxZoon: true, showCoverageOnHover:true, zoomToBoundsOnClick: true});
 	myLayer.setGeoJSON(placeList);
 	map.fitBounds(myLayer.getBounds());
+	markers.addLayer(myLayer);
+	map.addLayer(markers);
+	
+	markers.on('clusterclick', function (a) { setUpMap(placeList) });
+	markers.on('click', function (a) { alert('Marker Clicked'); });
+	markers.on('clusterclick', function (a) {a.layer.zoomToBounds(); });
 }
