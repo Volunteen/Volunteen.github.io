@@ -47,7 +47,7 @@ function showInfo(data, Tabletop) {
 
 
 function setupMap(placeList){
-	var markers = new L.MarkerClusterGroup({animateAddingMarkers: true, maxClusterRadius: 200, spiderfyOnMaxZoon: true, showCoverageOnHover:true, zoomToBoundsOnClick: true});
+	var markers = new L.MarkerClusterGroup({animateAddingMarkers: true, maxClusterRadius: 100, spiderfyOnMaxZoon: true, showCoverageOnHover:true, zoomToBoundsOnClick: true});
 	myLayer.setGeoJSON(placeList);
 	map.fitBounds(myLayer.getBounds());
 	markers.addLayer(myLayer);
