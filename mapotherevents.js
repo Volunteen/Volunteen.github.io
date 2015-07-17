@@ -20,6 +20,7 @@ function showInfo(data, Tabletop) {
     	var place = data[i];
     	
     	var placeJSON = { type: 'Feature',
+    						alert("My bad");
     					properties: {
     						title: place.name,
     						description: place.description,
