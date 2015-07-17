@@ -79,20 +79,20 @@
 		<div><iframe width="100%" height="600" align="center" src="http://volunteen.github.io/mapotherevents.html"></iframe></div>
 <!--<div id="infosec">-->
  <script type="text/javascript">
-	           window.onload = function() { init() };
-	           function init() {
+	      window.onload = function() { init() };
+	      function init() {
 		Tabletop.init({key: '1Yd3aFX9vfpq31tFoyCHe6rAOfGf9DonMIaanwDPBvjQ', callback: showInfo, simpleSheet: true});
-	}
+	// }
 	           function showInfo(data) {
-        var dataArray = [];
-        for (var i = 0; i<data.length; i ++){
-            dataArray[i] = data[i];
-            var info = "<p> Event Name: " + dataArray[i].name + "<br>" + "Description: " + dataArray[i].description + "</p><br>";
-            console.log(info);
-            $("#second").append(info);
-        }
-        
-	}
+		        var dataArray = [];
+		        for (var i = 0; i<data.length; i ++){
+		            dataArray[i] = data[i];
+		            var info = "<p> Event Name: " + dataArray[i].name + "<br>" + "Description: " + dataArray[i].description + "</p><br>";
+		            console.log(info);
+		            $("#second").append(info);
+		        }
+		}
+	      }
 </script>
 <!--</div>-->
 
