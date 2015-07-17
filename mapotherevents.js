@@ -24,7 +24,7 @@ function showInfo(data, Tabletop) {
     						title: place.name,
     						description: place.description,
     						type:place.type,
-    						description: place.description,
+    						description: place.description + "br" + place.link,
     						'marker-color': place.color,
     						'marker-size': 'large',
     						'marker-symbol': place.symbol,
