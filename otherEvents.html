@@ -60,8 +60,10 @@
 			font-size: 14px;
 			background-color: #e3e2e2;
 			color: #000000;}
-		p2{
-			font-family: 'Source Sans Pro', cursive; 
+		p1{	font-family: 'Sacramento', cursive; 
+			font-size: 25px;
+			text-align: left;}
+		p2{	font-family: 'Source Sans Pro', cursive; 
 			font-size: 25px;
 			text-align: left;}
 		#link12 a{color:#b0e7e4;}
@@ -94,7 +96,7 @@
 		        var dataArray = [];
 		        for (var i = 0; i<data.length; i ++){
 		            dataArray[i] = data[i];
-		            var info = "<p2> Event Name: " + dataArray[i].name + "<br>" + "Description: " + dataArray[i].description + "</p2><br>";
+		            var info = "<p1> Event Name: " + dataArray[i].name + "</p1><br>" + "<p2>Description: " + dataArray[i].description + "</p2><br>";
 		            console.log(info);
 		            $("#second").append(info);
 		        } //end of for loop
