@@ -2,7 +2,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZ3NmZ2lybHN3aG9jb2RlIiwiYSI6IjA0MmYzMjVkNTRlM
 var map = L.mapbox.map('map', 'examples.map-20v6611k')
   .setView([38.12367, -76.81229], 9);
 
-var myLayer = L.mapbox.featureLayer().addTo(map);
+var myLayer = L.mapbox.featureLayer();
 var spreadsheet_url = '1H6df90hRsNrTdefLDfYjmck-viyQ0EwMyROSsUsBkvU';
 
 
@@ -47,6 +47,13 @@ function showInfo(data, Tabletop) {
 
 
 function setupMap(placeList){
+		var markers = new L.MarkerClusterGroup({animateAddingMarkers: true, maxClusterRadius: 100, spiderfyOnMaxZoon: true, showCoverageOnHover:true, zoomToBoundsOnClick: true});
 	myLayer.setGeoJSON(placeList);
 	map.fitBounds(myLayer.getBounds());
+	markers.addLayer(myLayer);
+	map.addLayer(markers);
+	
+	markers.on('clusterclick', function (a) {setupMap(placeList)});
+	//markers.on('click', function (a) { alert('Marker Clicked'); });
+	markers.on('clusterclick', function (a) {a.layer.zoomToBounds(); });
 }
