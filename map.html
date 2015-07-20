@@ -31,10 +31,40 @@
 		  #map { position:relative; height: 500px; width:100%; }
 		  .popupimage { width: 200px; }
 		</style>
-
+		<style>
+			.legend label,
+			.legend span {
+  			display:block;
+  			float:left;
+  			height:15px;
+  			width:40px;
+  			text-align:center;
+  			font-size:8px;
+  			color:#808080;
+  			}
+		</style>
 	</head>
 
 	<body>
+		<div id='legend' style='display:none;'>
+  		<strong>Legend</strong>
+  		<nav class='legend clearfix'>
+			 <span style='background:#FB9CAF;'></span>
+			 <span style='background:#278237;'></span>
+			 <span style='background:#FBFB00;'></span>
+			 <span style='background:#A1221B;'></span>
+    			<span style='background:#25A8A8;'></span>
+    			<span style='background:#788582;'></span>
+    
+  			<br />
+    			<label>Youth</label>
+    			<label>Elderly</label>
+   			<label>Community  </label>
+    			<label>Fitness</label>
+    			<label>Animals</label>
+    			<label>Other</label>
+			</div>
+
 
 		<div id='container'>
 			<center><h1>Volunteer Opportunities in the Bay Area</h1></center>
