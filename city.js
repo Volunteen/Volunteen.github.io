@@ -59,3 +59,4 @@ function setupMap(placeList){
 	//markers.on('click', function (a) { alert('Marker Clicked'); });
 	markers.on('clusterclick', function (a) {a.layer.zoomToBounds(); });
 }
+map.legendControl.addLegend(document.getElementById('legend').innerHTML);
