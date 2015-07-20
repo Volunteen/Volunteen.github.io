@@ -47,7 +47,16 @@ function showInfo(data, Tabletop) {
 
 
 function setupMap(placeList){
+	// myLayer.setGeoJSON(placeList);
+	// map.fitBounds(myLayer.getBounds());
+	var markers = new L.MarkerClusterGroup({animateAddingMarkers: true, maxClusterRadius: 100, spiderfyOnMaxZoon: true, showCoverageOnHover:true, zoomToBoundsOnClick: true});
 	myLayer.setGeoJSON(placeList);
 	map.fitBounds(myLayer.getBounds());
+	markers.addLayer(myLayer);
+	map.addLayer(markers);
+	
+	markers.on('clusterclick', function (a) {setupMap(placeList)});
+	//markers.on('click', function (a) { alert('Marker Clicked'); });
+	markers.on('clusterclick', function (a) {a.layer.zoomToBounds(); });
 
 }
