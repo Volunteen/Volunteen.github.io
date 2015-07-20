@@ -5,6 +5,7 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 var myLayer = L.mapbox.featureLayer();
 
 var spreadsheet_url = '1O3dYsn5WFju_t-AgDR-FwEtGGpKLLc5rfyn89aqrD24';
+//1O3dYsn5WFju_t-AgDR-FwEtGGpKLLc5rfyn89aqrD24';
 
 window.onload = function(){
 	Tabletop.init(   {  key: spreadsheet_url,
