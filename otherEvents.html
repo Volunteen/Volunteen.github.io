@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <meta charset=utf-8 />
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
 <link href="mainpage.css" rel="stylesheet" type="text/css">
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<title>Volunteen</title>
+<title>Volunteer</title>
 <script src='tabletop1.3.4.js'></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
 <script src='tabletopEVENT.js'></script>
@@ -18,16 +17,12 @@
     		.everything {
 			background-color: #7e7c7c;
 			margin: 3px;}
-		a:link {text-decoration: none;}
-		a:visited {text-decoration: none;}
-		a:hover {opacity: 0.5; text-decoration: none;}
-		a:active {text-decoration: none;}
 		#first {
 			font-family: 'Cinzel Decorative', cursive;
-			padding-top: 220px;
-			padding-bottom: 225px;
+			padding-top: 150px;
+			padding-bottom: 155px;
 			text-align: center;
-			font-size: 4vw;
+			font-size: 50px;
 			background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/US_Navy_090219-N-7544A-109_Air_Traffic_Controller_2nd_Class_Lamar_Jones_and_Air_Traffic_Controller_3rd_Class_Allison_Hamm_sort_through_canned_goods_at_The_Food_Bank_of_Southeastern_Virginia.jpg");
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -50,29 +45,6 @@
     			bottom: 20px;
    			right: 30px;
 			height: 60px;}
-			
-		#second a{color: #606060;}		
-		#second {
-			font-family: Source Sans Pro;
-			/*padding-top: 125px;*/
-			/*padding-bottom: 150px;*/
-			text-align: left;
-			font-size: 14px;
-			background-color: #e3e2e2;
-			color: #000000;}
-		p1{	font-family: 'Source Sans Pro'; 
-			font-size: 20px;
-			text-align: left;}
-		p2{	font-family: 'Source Sans Pro'; 
-			font-size: 14px;
-			text-align: left;}
-		#link12 a{color:#b0e7e4;}
-		#link12 {
-			/*border: solid #424242; */
-			padding-top: 50px;
-			padding-bottom: 50px;
-			font-family: 'Cinzel Decorative', cursive;
-			font-size: 25px;}
 		
     </style>
   </head>
@@ -84,29 +56,29 @@
 			    	<li><a href="getStarted.html"> Get Started </a></li>
 			    	<li><a href="contact2.html">Contact</a></li>
 			    </ul></div>
-		<div id="first"> 
-			<h1> other events </h1></div>
-		<div id="second">
-	 	<script type="text/javascript">
-	      window.onload = function() { init() };
-	      function init() {
+<div id="first"> 
+			<h1> other events </h1>
+</div>
+<div id="info">
+    <script type="text/javascript">
+	           window.onload = function() { init() };
+	           function init() {
 		Tabletop.init({key: '1Yd3aFX9vfpq31tFoyCHe6rAOfGf9DonMIaanwDPBvjQ', callback: showInfo, simpleSheet: true});
-	// }
+	}
 	           function showInfo(data) {
-		        var dataArray = [];
-		        for (var i = 0; i<data.length; i ++){
-		            dataArray[i] = data[i];
-		            var info = 
-		            "<p1> Event Name:" + dataArray[i].name + "</p1><br>" + "<p2> + Description:" dataArray[i].description + "</p2><br>";
-		            console.log(info);
-		            $("#second").append(info);
-		        } //end of for loop
-		} //end of showInfo function
-	      }//end of init
+        var dataArray = [];
+        for (var i = 0; i<data.length; i ++){
+            dataArray[i] = data[i];
+            var info = "<p> Event Name: " + dataArray[i].name + "<br>" + "Description: " + dataArray[i].description + "</p><br>";
+            console.log(info);
+            $("#info").append(info);
+        }
+        
+	}
 </script>
 </div>
-			
-		<div><iframe width="100%" height="600" align="center" src="http://volunteen.github.io/mapotherevents.html"></iframe></div>
+		<div><iframe width="100%" height="600" align="center" src="http://volunteer-website.github.io/mapotherevents.html"></iframe></div>
+
 
 		<div id = "link12">
 			<center> 
