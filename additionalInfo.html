@@ -48,11 +48,26 @@
 			list-style-type: none; list-style-image: none; background-color: #606060;
 			font-family: 'Sacramento', cursive; text-align: center; border: solid #e3e2e2;}
 		#navmenu li {display: inline; padding: 5px 80px 5px 80px; font-size: 25px;}
+		
 		#backToTop img{
 			position: fixed;
     			bottom: 20px;
    			right: 30px;
 			height: 60px;}
+			
+		div > h4{
+			font-family: 'Sacramento';
+			font-size: 2.8vw;
+			text-align: center;}
+			
+		div > p1{	
+			font-family: 'Cinzel Decorative', cursive;
+			font-size: 20px;
+			text-align: left;}
+		div > p2{	
+			font-family: 'Source Sans Pro', cursive;
+			font-size: 20px;
+			text-align: left;}
 			
 		#second a{color: #606060;}		
 		#second {
@@ -126,24 +141,8 @@
 		<div id="second">
 			<h1> Description </h1>
 			<p1> More descriptions </p1><br>
-			<p2><h4>opportunities with animals </h4>
-	 	<script type="text/javascript">
-	      window.onload = function() { init() };
-	      function init() {
-		Tabletop.init({key: '1EwyBJtnCKLcjYuUP8HLXOaQswEfZQMVlOTIm6OjngTk', callback: showInfo, simpleSheet: true});
-	// }
-	           function showInfo(data) {
-		        var dataArray = [];
-		        for (var i = 0; i<data.length; i ++){
-		            dataArray[i] = data[i];
-		            var info = "<p1>" + dataArray[i].name + "</p1><br>" + "<p2>" + dataArray[i].description + "</p2><br>";
-		            console.log(info);
-		            $("#second").append(info);
-		        } //end of for loop
-		} //end of showInfo function
-	      }//end of init
-</script>
-</div>
+			<p2><h4>opportunities with animals </h4></div>
+			
 		<div id="third">
 			<h1> Apps </h1>
 			<p1> Volunteer wherever you want, whenever you want </p1><br>
@@ -151,7 +150,7 @@
 	 	<script type="text/javascript">
 	      window.onload = function() { init() };
 	      function init() {
-		Tabletop.init({key: '10sNojGq7jYst8SjRqQofpLl0HWnPVfUtAp8fw3bJLGY', callback: showInfo, simpleSheet: true});
+		Tabletop.init({key: '1EwyBJtnCKLcjYuUP8HLXOaQswEfZQMVlOTIm6OjngTk', callback: showInfo, simpleSheet: true});
 	// }
 	           function showInfo(data) {
 		        var dataArray = [];
@@ -173,7 +172,25 @@
 			<p1> These opportunities have various events throughout the year. </p1><br>
 			<p2>This is where the list of items will go:<br>
 			Opportunity 1<br>
-			Opportunity 2</p2></div>
+			Opportunity 2</p2>
+			
+	 	<script type="text/javascript">
+	      window.onload = function() { init() };
+	      function init() {
+		Tabletop.init({key: '10sNojGq7jYst8SjRqQofpLl0HWnPVfUtAp8fw3bJLGY', callback: showInfo, simpleSheet: true});
+	// }
+	           function showInfo(data) {
+		        var dataArray = [];
+		        for (var i = 0; i<data.length; i ++){
+		            dataArray[i] = data[i];
+		            var info = "<p1>" + dataArray[i].name + "</p1><br>" + "<p2>" + dataArray[i].description + "</p2><br>";
+		            console.log(info);
+		            $("#second").append(info);
+		        } //end of for loop
+		} //end of showInfo function
+	      }//end of init
+	</script></div>
+			
 		<div id = "link2">
 			<center> 
 				<a href="https://docs.google.com/forms/d/1h_E8y3b1Sb8KKqHde7mgCOsQEJZBn3cmLWq_aJkEIu8/viewform">Submit your own reccurring opportunities here!</a></center></div>
