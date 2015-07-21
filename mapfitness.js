@@ -2,7 +2,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZ3NmZ2lybHN3aG9jb2RlIiwiYSI6IjA0MmYzMjVkNTRlM
 var map = L.mapbox.map('map', 'examples.map-20v6611k')
   .setView([38.12367, -76.81229], 9);
 
-var myLayer = L.mapbox.featureLayer().addTo(map);
+var myLayer = L.mapbox.featureLayer();
 var spreadsheet_url = '11JVrBRxEm-N_SjUw9xtvk0a8mjJyEBZmwrFkW6zfmDs';
 
 
