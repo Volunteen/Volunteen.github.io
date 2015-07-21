@@ -131,15 +131,15 @@
 	 	<script type="text/javascript">
 	      window.onload = function() { init() };
 	      function init() {
-		Tabletop.init({key: '10sNojGq7jYst8SjRqQofpLl0HWnPVfUtAp8fw3bJLGY', callback: showInfo, simpleSheet: true});
+		Tabletop.init({key: '10sNojGq7jYst8SjRqQofpLl0HWnPVfUtAp8fw3bJLGY', callback: showInfo1, simpleSheet: true});
 	// }
-	           function showInfo(data) {
-		        var dataArray = [];
-		        for (var i = 0; i<data.length; i ++){
-		            dataArray[i] = data[i];
-		            var info = "<p1>" + dataArray[i].name + "</p1><br>" + "<p2>" + dataArray[i].description + "</p2><br><br>";
-		            console.log(info);
-		            $("#second").append(info);
+	           function showInfo1(data1) {
+		        var dataArray1 = [];
+		        for (var i = 0; i<data1.length; i ++){
+		            dataArray1[i] = data1[i];
+		            var info1 = "<p1>" + dataArray1[i].name + "</p1><br>" + "<p2>" + dataArray1[i].description + "</p2><br><br>";
+		            console.log(info1);
+		            $("#second").append(info1);
 		        } //end of for loop
 		} //end of showInfo function
 	      }//end of init
@@ -154,15 +154,15 @@
 	 	<script type="text/javascript">
 	      window.onload = function() { init() };
 	      function init() {
-		Tabletop.init({key: '1Yd3aFX9vfpq31tFoyCHe6rAOfGf9DonMIaanwDPBvjQ', callback: showInfo, simpleSheet: true});
+		Tabletop.init({key: '1Yd3aFX9vfpq31tFoyCHe6rAOfGf9DonMIaanwDPBvjQ', callback: showInfo2, simpleSheet: true});
 	// }
-	           function showInfo(data) {
-		        var dataArray = [];
-		        for (var i = 0; i<data.length; i ++){
-		            dataArray[i] = data[i];
-		            var info = "<p3>" + dataArray[i].name + "</p3><br>" + "<p4>" + dataArray[i].description + "</p4><br><br>";
-		            console.log(info);
-		            $("#third").append(info);
+	           function showInfo2(data2) {
+		        var dataArray2 = [];
+		        for (var i = 0; i<data2.length; i ++){
+		            dataArray2[i] = data2[i];
+		            var info2 = "<p3>" + dataArray2[i].name + "</p3><br>" + "<p4>" + dataArray2[i].description + "</p4><br><br>";
+		            console.log(info2);
+		            $("#third").append(info2);
 		        } //end of for loop
 		} //end of showInfo function
 	      }//end of init
