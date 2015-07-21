@@ -15,7 +15,7 @@
 			
 		div > p1 { 
 			padding-top: -70px;
-    		font-family: 'Sacramento', cursive;}
+    		font-family: 'Sacramento', cursive; font-size: 35px;}
     		
 		h1 {margin: 0 0;}
 		ul {margin: 0 0;}
@@ -92,6 +92,7 @@
 			font-size: 35px;
 			background-color: #606060;
 			color: #e3e2e2;}
+		h3 {font-size:35px; font-family: 'Cinzel Decorative', cursive;}
 			
 		#backToTop img{
 			position: fixed;
